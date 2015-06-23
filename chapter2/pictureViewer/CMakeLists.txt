@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( pictureViewer )
+find_package( OpenCV REQUIRED )
+add_executable( pictureViewer pictureViewer.cpp )
+target_link_libraries( pictureViewer ${OpenCV_LIBS} )
